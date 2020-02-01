@@ -22,3 +22,5 @@ msg_box = driver.find_element_by_xpath(
 for i in range(count):
     msg_box.send_keys(msg)
     msg_box.send_keys(Keys.ENTER)
+
+driver.close()
