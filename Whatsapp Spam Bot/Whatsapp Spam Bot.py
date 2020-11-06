@@ -1,13 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import os
 
 msg = input('Enter the message : ')
 count = int(input('Enter the count : '))
 
-dir_path = os.path.dirname(__file__) + "\\chromedriver.exe"
-
-driver = webdriver.Chrome(dir_path)
+driver = webdriver.Chrome("chromedriver.exe")
 
 driver.get('http://web.whatsapp.com')
 
